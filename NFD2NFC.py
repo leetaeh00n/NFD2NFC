@@ -34,7 +34,7 @@ def normalize_names(root):
                     os.rename(original_dir_path, new_dir_path)
 
 if __name__ == "__main__":
-    # 변환을 적용할 폴더 경로를 지정하세요.
+    # 변환을 적용할 폴더 경로를 지정
     target_folder = "your/path"  # 실제 경로로 수정
 
     normalize_names(target_folder)
