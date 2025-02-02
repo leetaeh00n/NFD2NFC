@@ -3,7 +3,7 @@ import unicodedata
 
 def normalize_names(root):
     """
-    지정한 root 폴더와 그 하위 폴더의 모든 파일 및 폴더 이름을 NFC 정규화합니다.
+    지정한 root 폴더와 그 하위 폴더의 모든 파일 및 폴더 이름을 NFC 정규화
     """
     # topdown=False를 사용하여 하위 폴더부터 처리함으로써 디렉터리 이름 변경 시 문제가 발생하지 않도록 함
     for dirpath, dirnames, filenames in os.walk(root, topdown=False):
@@ -35,8 +35,7 @@ def normalize_names(root):
 
 if __name__ == "__main__":
     # 변환을 적용할 폴더 경로를 지정하세요.
-    target_folder = "C:/Users/dlxogns/Desktop/test"  # 실제 경로로 수정
+    target_folder = "your/path"  # 실제 경로로 수정
 
-    # 실제 작업 전에 백업 권장 및 테스트 환경에서 먼저 실행해보세요.
     normalize_names(target_folder)
     print("NFC 정규화 작업이 완료되었습니다.")
